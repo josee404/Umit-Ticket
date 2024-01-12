@@ -1,0 +1,13 @@
+POST  http://192.168.203.1:4000/sede HTTP/1.1
+Content-Type: application/json
+
+{
+  "SOLICITANTE":"jose lezama",
+  "CARGO":"pasante",
+  "SEDE":1,
+  "SERVICIO":1,
+  "UBICACION":"sistemas",
+  "AREA":1,
+  "PRIORIDAD":"baja",
+  "DESCRIPCION":"prueba"
+}

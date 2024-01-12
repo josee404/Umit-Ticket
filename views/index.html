@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ticket Umit</title>
+</head>
+<body>
+  <main class="ticket__main">
+    <article class="ticket__card">
+      <div class="ticket__card__content">
+      
+        <section class="ticket__card___content__header">
+          <div class="ticket__card__content__header__img">
+            <img src="/img/logo.png" alt="logo Umit">
+          </div>
+          <div class="ticket__card__content__header__title">
+            <h1>Ticket Umit</h1>
+          </div>
+        </section>
+
+        <section class="ticket__card__content__body">
+          <form class="form" action="" method="post">
+            <div class="content__input">
+              <label for="">Solicitante</label>
+              <input name="SOLICITANTE" type="text">
+            </div>
+            <div class="content__input">
+              <label for="">Cargo</label>
+              <input name="CARGO" type="text">
+            </div>
+            <div class="content__input__selects">
+              <div class="content__input__select">
+                <label for="">sede</label>
+                <select name="SEDE" id="sede"></select>
+              </div>
+              <div class="content__input__select">
+                <label for="">servicio</label>
+                <select name="SERVICIO" id="servicio"></select>
+              </div>
+            </div>
+            <div class="content__input__selects">
+              <div class="content__input__select">
+                <label for="area">area</label>
+                <select name="AREA" id="area"></select>
+              </div>
+              <div class="content__input__select">
+                <label for="prioridad">prioridad</label>
+                <select name="PRIORIDAD" id="">
+                  <option value="baja">baja</option>
+                  <option value="media">media</option>
+                  <option value="alta">alta</option>
+                </select>
+              </div>
+            </div>
+            <div class="content__input">
+              <label for="">Ubicación</label>
+              <input name="UBICACION" type="text">
+            </div>
+            <div class="description">
+              <label>Descripción</label>
+              <textarea name="DESCRIPCION" id=""></textarea>
+            </div>
+            <input type="submit" id="button" value="enviar">
+          </form>
+        </section>
+      </div>
+    </article>
+  </main>
+  <script src="/js/ticket.js"></script>
+</body>
+</html>
