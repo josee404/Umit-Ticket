@@ -24,7 +24,7 @@ async function get(){
 function mostrar(objeto, select){
   const eSelect = document.getElementById(select);
   const option = document.createElement('option');
-  option.setAttribute('value',objeto.idSede)
+  option.setAttribute('value',objeto.id)
   option.innerText = objeto.nombre;
 
   eSelect.appendChild(option);
