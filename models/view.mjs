@@ -28,7 +28,7 @@ export class ticketPublic {
       const date = new Date();
       const FECHA = date.toLocaleDateString();
       const HORA = `${date.getHours()}:${date.getMinutes()}`;
-      const ID_TICKET = FECHA + (Math.round(Math.random() * 1000));
+      const ID_TICKET = Math.round(Math.random() * 1000);
     
       const {
         SOLICITANTE,
