@@ -1,6 +1,6 @@
 async function get(){
   try {
-      const response = await fetch('https://192.168.203.1:4000/sede')
+      const response = await fetch('/sede')
       const {sedeJSON, servicioJSON, areaJSON} = await response.json();
 
       sedeJSON.forEach(sedeJSON => {
@@ -31,7 +31,7 @@ function mostrar(objeto, select){
 }
 
 async function post(json) {
-  const response = await fetch('https://192.168.203.1:4000/sede', {
+  const response = await fetch('/sede', {
     method: 'POST',
     body: json,  // No necesitas usar JSON.stringify aquí
     headers: new Headers({

@@ -4,7 +4,6 @@ import bodyParser from 'body-parser';
 import path from 'path';
 import {fileURLToPath} from 'url';
 import { publicRouter } from './routers/ticket.mjs';
-import{https} from 'node:https';
 
 const app = express();
 const PORT = process.env.PORT ?? 4000;
